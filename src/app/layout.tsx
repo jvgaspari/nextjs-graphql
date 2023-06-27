@@ -1,3 +1,4 @@
+'use client'
 import { ApolloProvider } from '@apollo/client'
 import './globals.css'
 import { client } from '@/services/graphql'
