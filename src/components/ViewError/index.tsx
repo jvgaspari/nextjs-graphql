@@ -1,7 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import { Typography } from 'antd'
 
-const ViewError: React.FC<any> = ({ children }) => {
+interface ViewErrorProps {
+  children: React.ReactNode
+}
+
+const ViewError: React.FC<ViewErrorProps> = ({ children }) => {
   return (
     <div>
       <Typography.Title level={3}>{children}</Typography.Title>
