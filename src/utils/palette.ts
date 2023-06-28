@@ -1,5 +1,6 @@
 const palette = {
-  white: '#fff',
-  gray: '#707070'
+  bg: {
+    lightgray: '#dedede'
+  }
 }
 export default palette

@@ -1,14 +1,10 @@
 import { styled } from 'styled-components'
+import palette from './../../utils/palette'
 
 export const ModalDetails = styled.div`
-  img {
-    width: 256px;
-    height: 256px;
-    object-fit: cover;
-  }
-
+  padding: 24px;
   div {
-    background-color: #dedede;
+    background-color: ${palette.bg.lightgray};
     border-radius: 16px;
     padding: 8px 16px;
   }

@@ -1,20 +1,3 @@
-export interface IAuxCharacter {
-  name: string
-  status: string
-  image: string
-  allPeople: {
-    people: {
-      name: string
-      species: {
-        name: string
-      }
-      homeworld: {
-        name: string
-      }
-    }
-  }
-}
-
 export interface IGetAllPeople {
   allPeople: {
     people: ICharacterStarWars[]
@@ -32,8 +15,13 @@ export interface ICharacterStarWars {
   }
 }
 
+interface IDetailsPerson extends ICharacterStarWars {
+  eyeColor: string
+  height: number
+}
+
 export interface IPerson {
-  person: ICharacterStarWars
+  person: IDetailsPerson
 }
 
 export interface IGetPersonFilter {
